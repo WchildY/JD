@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../../../H5前端课程/JS/ds/css/universal.css">
+    <link rel="stylesheet" href="../../../H5前端课程/JS/ds/css/yanxuan-index.css">
+</head>
+<body>
+<!--content 2 start-->
+<div class="banner" id="bannerBx">
+    <div class="banner-p">
+        <ul id="img">
+            <li class="cur1">
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner3.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner5.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner6.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner7.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner8.webp" alt=""></a>
+            </li>
+            <li>
+                <a href="#" class="bgc"><img src="../../../H5前端课程/JS/ds/images/banner9.webp" alt=""></a>
+            </li>
+        </ul>
+        <span class="banner-l" id="bal"></span>
+        <span class="banner-r" id="bar"></span>
+        <ol id="index">
+            <li class="cur2"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</div>
+<script src="../JS/animate.js"></script>
+<script src="../JS/pulick.js"></script>
+<script>
+    var imgList = document.getElementById('img').getElementsByTagName('li');
+    var list = document.getElementById('index').getElementsByTagName('li');
+    var index = 0;
+    var timer = null;
+
+    function moveImg(imgList,index) {
+        for(var i=0;i<imgList.length;i++){
+            if(imgList[i].className=='cur1'){//清除li的透明度样式
+                imgList[i].className='';
+            }
+        }
+        imgList[index].className='cur1';
+    }
+    function moveIndex(list,num){//移动小圆圈
+        for(var i=0;i<list.length;i++){
+            if(list[i].className=='cur2'){//清除li的背景样式
+                list[i].className='';
+            }
+        }
+        list[num].className='cur2';
+    }
+
+    var nextMove=function(){
+        index+=1;
+        if(index >= list.length-1){
+            index=0
+        }
+        moveImg(imgList,index);
+        moveIndex(list,index);
+    };
+    var play=function(){
+        timer=setInterval(function(){
+            nextMove();
+        },2000);
+    };
+    play();
+
+    for(var i=0;i<list.length;i++){//鼠标覆盖上哪个小圆圈，图片就移动到哪个小圆圈，并停止
+        list[i].index=i;
+        list[i].onmouseover= function () {
+            var clickIndex= parseInt(this.index);
+
+            index=clickIndex;
+
+            moveImg(imgList,index);
+            moveIndex(list,index);
+            clearInterval(timer);
+        };
+        list[i].onmouseout= function () {//移开后继续轮播
+            play();
+        };
+
+    }
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.search{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #f10214;
+    box-shadow:2px 2px 2px rgba(0,0,0,.2);
+    position:absolute;
+    top:31px;
+
+}
+.search-show{
+    position:fixed;
+    z-index: 100;;
+    top: 0;
+    left: 0;
+}
+.search-in{
+    width: 1190px;
+    height: 50px;
+    line-height: 50px;
+    margin:0 auto;
+    position: relative;
+    padding-top:7px;
+    box-sizing: border-box;
+}
+.search h1{
+    width: 125px;
+    height: 40px;
+    float:left;
+}
+.search h1 a{
+    display:inline-block;
+    width: 125px;
+    height: 40px;
+    background:url("../images/logo.png") no-repeat 0 -120px;
+}
+.search .sousuo{
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e1251b;
+    /*position:absolute;*/
+    /*left: 60px;*/
+    /*top: 25px;*/
+    float:left;
+    margin:0 20px 0 130px;
+}
+.search .sousuo input{
+    outline:none;
+    width: 425px;
+    height: 27px;
+    line-height: 27px;
+    padding:2px 10px 2px 17px;
+    border:none;
+}
+.search .sousuo button{
+    float:right;
+    width: 58px;
+    height: 32px;
+    border:none;
+    background-color:#e1251b;
+}
+.search .sousuo button.iconfont{
+    font-size: 20px;
+    color:#fff;
+}
+.search .sousuo button:hover{
+    background-color:#c81623;
+    cursor:pointer;
+}
+.search .sousuo input,.sousuo i{
+    float:left;
+}
+.search .sousuo i{
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-top:-9px;
+}
+.search .sousuo i.iconfont{
+    font-size: 20px;
+    color:#9f9f9f;
+}
+.search .shopping{
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #eee;
+    background-color:#fff;
+    text-align:center;
+    z-index: 21;
+    float:left;
+    position: relative;
+}
+#shop3{
+    width: 306px;
+    height: 69px;
+    border: 1px solid #c81623;
+    position: absolute;
+    z-index: -1;
+    background-color:#fff;
+    top: 35px;
+    right: -1px;
+    /*display:none;*/
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+}
+.shopping:hover{
+    border-color: #e1251b;
+    border-bottom-color: transparent;
+}
+.shopping a{
+    color:#e1251b;
+    font-size: 12px;
+}
+.shopping-car{
+    position: relative;
+    z-index: 15;
+    background-color: #fff;
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/limit.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="JS/public.js"></script>
+    <script>
+        window.onload = function(){
+            /*  鼠标滚动事件   */
+            function getScroll() {
+                return {
+                    left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft||0,
+                    top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+                };
+            }
+            window.onscroll = function(){
+                if (getScroll().top >= 200){
+                    my$("fixed1").className = "fixed1 fixed2";
+                    my$("last").className = "last last2";
+                }else{
+                    my$("fixed1").className = "fixed1";
+                    my$("last").className = "last"
+                }
+            };
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="Time-limit">
+    <div class="Time-limit-l">
+        <a href="#">
+            <h5>京东秒杀</h5>
+            <p>
+                <strong id="times">16:00</strong>点场&nbsp;倒计时
+            </p>
+            <span class="zong">
+                    <span id="time1" class="one"></span>
+                    <span id="time2" class="one two"></span>
+                    <span id="time3"></span>
+            </span>
+        </a>
+    </div>
+    <div id="box3">
+        <div class="Time-limit-c">
+            <ul>
+                <li >
+                    <a href="#">
+                        <img src="images/special1.webp" alt="">
+                        <p></p>
+                        <h6>AOC 27英寸 Carry全场 曲面2K高清 144Hz高刷新率1Ms 超广色域 升降支架游戏电竞显示器 CQ27G1</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1769.00</strong></span>
+                            <span class="two"><i>￥</i><s>2088.90</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special2.webp" alt="">
+                        <p></p>
+                        <h6>南极人（NANJIREN）冲锋衣裤男女三合一两件套秋冬季可拆卸加厚抓绒防风防水保暖外套登山服 推荐：男牛仔蓝 XL</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>199.00</strong></span>
+                            <span class="two"><i>￥</i><s>359.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special3.webp" alt="">
+                        <p></p>
+                        <h6>好时之吻 Kisses 炫彩 多口味巧克力 糖果零食 婚庆喜糖 散装 500g</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>50.80</strong></span>
+                            <span class="two"><i>￥</i><s>57.40</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special4.webp" alt="">
+                        <p></p>
+                        <h6>松下（Panasonic） MC-8D58D充电式无绳手持除螨无线长续航100W吸入功率大吸力家用吸尘器（银色）</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1348.00</strong></span>
+                            <span class="two"><i>￥</i><s>2199.00</s></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/special5.webp" alt="">
+                        <p></p>
+                        <h6>梭伦（SOLLEN） 男表商务休闲时尚绅士手表全自动机械表镂空飞轮钢带手表男士手表 【镂空陀飞轮】精钢蓝色804【限时送皮表带】</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>618.00</strong></span>
+                            <span class="two"><i>￥</i><s>688.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special6.webp" alt="">
+                        <p></p>
+                        <h6>逆世界 i7 8700升十二线程/RX580 4G独显16G内存吃鸡游戏办公台式电脑主机DIY组装机</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1899.00</strong></span>
+                            <span class="two"><i>￥</i><s>2499.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special7.webp" alt="">
+                        <p></p>
+                        <h6>欣怡万嘉 门上单杠引体向上器材家用室内单杆多功能免打孔墙体单杠双杠儿童中考健身运动 安装宽度74-95厘米内=新款双专利-防滑+防反转</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>75.00</strong></span>
+                            <span class="two"><i>￥</i><s>88.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special8.webp" alt="">
+                        <p></p>
+                        <h6>卡帝乐鳄鱼 CARTELO 中长款羽绒服男士冬装新款连帽修身羽绒服保暖冬季外套8821 黑色横纹 175/L</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>268.00</strong></span>
+                            <span class="two"><i>￥</i><s>488.00</s></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/special9.webp" alt="">
+                        <p></p>
+                        <h6>太平 梳打饼干 香葱味 400g苏打饼干咸味饼干零食(新老包装随机发货)</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>8.90</strong></span>
+                            <span class="two"><i>￥</i><s>11.40</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special10.webp" alt="">
+                        <p></p>
+                        <h6>富贵鸟品牌【买风衣 送手表 只要88元】毛呢中长款风衣外套男 D67深灰 L(120-135斤)</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>88.00</strong></span>
+                            <span class="two"><i>￥</i><s>228.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special11.webp" alt="">
+                        <p></p>
+                        <h6>华为nova5pro 手机（白条6期免息0首付+4色现货当天发+30天价保） 亮黑色 8GB+128GB全网通</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>2669.00</strong></span>
+                            <span class="two"><i>￥</i><s>3999.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special12.webp" alt="">
+                        <p></p>
+                        <h6>宏碁（Acer）商祺SQX4270 540N 商用办公台式电脑整机（九代i3-9100 8G 1T wifi Win10 三年上门）21.5英寸</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>2666.00</strong></span>
+                            <span class="two"><i>￥</i><s>3099.00</s></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/special13.webp" alt="">
+                        <p></p>
+                        <h6>卡罗德（CAROD） 全新立式钢琴 T1  原装88键 自动演奏 品牌钢琴 T1 经典版</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>15199.00</strong></span>
+                            <span class="two"><i>￥</i><s>18500.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special14.webp" alt="">
+                        <p></p>
+                        <h6>鳄鱼恤 CROCODILE 商务休闲正装鞋子男经典舒适套脚单鞋男士皮鞋男 EYX1066 黑色 42</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>138.00</strong></span>
+                            <span class="two"><i>￥</i><s>328.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special15.webp" alt="">
+                        <p></p>
+                        <h6>云南白药三七粉 豹七 超细粉 260g/瓶 配小勺 云南文山三七头打粉</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>178.00</strong></span>
+                            <span class="two"><i>￥</i><s>248.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special16.webp" alt="">
+                        <p></p>
+                        <h6>OJJ Z1指纹锁智能锁家用防盗门锁智能门锁电子锁密码锁指纹锁</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1498.00</strong></span>
+                            <span class="two"><i>￥</i><s>1999.00</s></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/special17.webp" alt="">
+                        <p></p>
+                        <h6>雷神(ThundeRobot)五代新911荣耀版16.6英寸非15.6游戏笔记本电脑九代i7-9750H 16G 512GSSD 144Hz GTX1660Ti</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>8259.00</strong></span>
+                            <span class="two"><i>￥</i><s>8999.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special18.webp" alt="">
+                        <p></p>
+                        <h6>【星空套装】全新Kindle 电子书阅读器 青春版 4G白色*青春版保护套-星空</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>666.00</strong></span>
+                            <span class="two"><i>￥</i><s>726.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special19.webp" alt="">
+                        <p></p>
+                        <h6>企鹅欧洲史1-3（套装共3册）</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>139.00</strong></span>
+                            <span class="two"><i>￥</i><s>194.50</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special20.webp" alt="">
+                        <p></p>
+                        <h6>欧洲原装进口 诺优能荷兰版 (Nutrilon)  荷兰牛栏 儿童配方奶粉 5段(24-36月) 800g 安心罐</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>109.00</strong></span>
+                            <span class="two"><i>￥</i><s>150.00</s></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/special1.webp" alt="">
+                        <p></p>
+                        <h6>AOC 27英寸 Carry全场 曲面2K高清 144Hz高刷新率1Ms 超广色域 升降支架游戏电竞显示器 CQ27G1</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1769.00</strong></span>
+                            <span class="two"><i>￥</i><s>2088.90</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special2.webp" alt="">
+                        <p></p>
+                        <h6>南极人（NANJIREN）冲锋衣裤男女三合一两件套秋冬季可拆卸加厚抓绒防风防水保暖外套登山服 推荐：男牛仔蓝 XL</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>199.00</strong></span>
+                            <span class="two"><i>￥</i><s>359.00</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special3.webp" alt="">
+                        <p></p>
+                        <h6>好时之吻 Kisses 炫彩 多口味巧克力 糖果零食 婚庆喜糖 散装 500g</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>50.80</strong></span>
+                            <span class="two"><i>￥</i><s>57.40</s></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="images/special4.webp" alt="">
+                        <p></p>
+                        <h6>松下（Panasonic） MC-8D58D充电式无绳手持除螨无线长续航100W吸入功率大吸力家用吸尘器（银色）</h6>
+                        <div class="money">
+                            <span class="one"><i>￥</i><strong>1348.00</strong></span>
+                            <span class="two"><i>￥</i><s>2199.00</s></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="jiantou-l" id="left3"><i></i></button>
+        <button class="jiantou-r" id="right3"><i></i></button>
+    </div>
+    <div class="Time-limit-r" id="box4">
+        <div class="Time-limit-r-one">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/special22.webp" alt="">
+                        <div class="Time-limit-r-b">
+                            <p class="Time-limit-r-b-title">金秋钟表精选</p>
+                            <p class="Time-limit-r-b-promo">全场低至9.9元</p>
+                            <div class="action">
+                                品牌秒杀
+                                <i class="sanjiao xuanzhuan"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/special23.webp" alt="">
+                        <div class="Time-limit-r-b">
+                            <p class="Time-limit-r-b-title">金秋钟表精选</p>
+                            <p class="Time-limit-r-b-promo">全场低至9.9元</p>
+                            <div class="action">
+                                品牌秒杀
+                                <i class="sanjiao xuanzhuan"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/special22.webp" alt="">
+                        <div class="Time-limit-r-b">
+                            <p class="Time-limit-r-b-title">金秋钟表精选</p>
+                            <p class="Time-limit-r-b-promo">全场低至9.9元</p>
+                            <div class="action">
+                                品牌秒杀
+                                <i class="sanjiao xuanzhuan"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ol>
+                <li class="current"></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="fixed1" id="fixed1">
+        <ul>
+            <li>
+                <a class="und" href="###">京东秒杀</a>
+            </li>
+            <li>
+                <a class="two und" href="###">
+                    <img src="images/11_11-1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a class="und" href="###">特色优选</a>
+            </li>
+            <li>
+                <a class="und" href="###">频道广场</a>
+            </li>
+            <li>
+                <a class="und" href="###">为你推荐</a>
+            </li>
+            <li>
+                <a class="und" href="###">
+                    <i class="iconfont icon-kefu1"></i>
+                    客服
+                </a>
+            </li>
+            <li>
+                <a class="und" href="###">
+                    <i class="iconfont icon-fankui"></i>
+                    反馈
+                </a>
+            </li>
+        </ul>
+        <a class="last" id="last" href="###">
+            <i class="iconfont icon-dingbu"></i><br/>
+            顶部
+        </a>
+    </div>
+    <script>
+        var fixed1 = my$("fixed1");
+        var lists = fixed1.children[0].children;
+        var aObjs = fixed1.getElementsByTagName("a");
+        for (var i = 0;i < aObjs.length;i++){
+            aObjs[i].onmouseover = function(){
+                this.style.backgroundColor = "#c81623";
+                this.style.color = "#fff";
+            };
+            aObjs[i].onmouseout = function(){
+                this.style.backgroundColor = "";
+                this.style.color = "#000";
+            };
+        }
+    </script>
+    <script>
+        var box4 = my$("box4");
+        var screen1 = box4.children[0];
+        var imgWidth4 = screen1.offsetWidth;
+        var ulObj4 = box4.children[0].children[0];
+        var olObj4 = box4.children[0].children[1];
+        var current = 0;//只声明了一次
+        for (var i = 0;i < olObj4.children.length;i++){
+            olObj4.children[i].setAttribute("index",i);
+            olObj4.children[i].onmouseover = function(){
+                for (var j = 0 ;j < olObj4.children.length;j++) {
+                    olObj4.children[j].removeAttribute("class");
+                }
+                this.className = "current";
+                clearInterval(timeId);
+                current = this.getAttribute("index");
+                animate(ulObj4,-current * imgWidth4);
+            };
+            olObj4.children[i].onmouseout = function(){
+                timeId = clearInterval(timeId);
+            };
+        }
+        function f1() {
+            if (current == ulObj4.children.length - 1) {
+                current = 0;
+                ulObj4.style.left = 0 + "px";
+            }
+            current++;
+            animate(ulObj4,-current * imgWidth4);
+            if (current == ulObj4.children.length - 1){
+                olObj4.children[olObj4.children.length - 1].className = "";
+                olObj4.children[0].className = "current";
+            }else{
+                for (var i = 0;i < olObj4.children.length;i++){
+                    olObj4.children[i].removeAttribute("class");
+                }
+                olObj4.children[current].className = "current";
+            }
+        }
+        var timeId=setInterval(f1, 3000);
+        function animate(element,target){
+            clearInterval(element.timeId);
+            element.timeId = setInterval(function(){
+                var current = element.offsetLeft;
+                var step = 10;
+                step = current > target ? -step : step;
+                current += step;
+                if (Math.abs(current - target ) > Math.abs(step)){
+                    element.style.left = current + "px";
+                } else{
+                    clearInterval(element.timeId);
+                    element.style.left = target + "px";
+                }
+            },18);
+        }
+    </script>
+</div>
+
+
+<!--<div class="Time-limit">-->
+    <!--<div class="Time-limit-l">-->
+        <!--<a href="#">-->
+            <!--<h5>京东秒杀</h5>-->
+            <!--<p>-->
+                <!--<strong id="times">16:00</strong>点场&nbsp;倒计时-->
+            <!--</p>-->
+            <!--<span class="zong">-->
+                    <!--<span id="time1" class="one"></span>-->
+                    <!--<span id="time2" class="one two"></span>-->
+                    <!--<span id="time3"></span>-->
+            <!--</span>-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div id="box3">-->
+        <!--<div class="Time-limit-c">-->
+            <!--<ul>-->
+                <!--<li >-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special1.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>AOC 27英寸 Carry全场 曲面2K高清 144Hz高刷新率1Ms 超广色域 升降支架游戏电竞显示器 CQ27G1</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1769.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>2088.90</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special2.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>南极人（NANJIREN）冲锋衣裤男女三合一两件套秋冬季可拆卸加厚抓绒防风防水保暖外套登山服 推荐：男牛仔蓝 XL</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>199.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>359.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special3.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>好时之吻 Kisses 炫彩 多口味巧克力 糖果零食 婚庆喜糖 散装 500g</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>50.80</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>57.40</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special4.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>松下（Panasonic） MC-8D58D充电式无绳手持除螨无线长续航100W吸入功率大吸力家用吸尘器（银色）</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1348.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>2199.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special5.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>梭伦（SOLLEN） 男表商务休闲时尚绅士手表全自动机械表镂空飞轮钢带手表男士手表 【镂空陀飞轮】精钢蓝色804【限时送皮表带】</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>618.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>688.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special6.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>逆世界 i7 8700升十二线程/RX580 4G独显16G内存吃鸡游戏办公台式电脑主机DIY组装机</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1899.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>2499.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special7.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>欣怡万嘉 门上单杠引体向上器材家用室内单杆多功能免打孔墙体单杠双杠儿童中考健身运动 安装宽度74-95厘米内=新款双专利-防滑+防反转</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>75.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>88.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special8.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>卡帝乐鳄鱼 CARTELO 中长款羽绒服男士冬装新款连帽修身羽绒服保暖冬季外套8821 黑色横纹 175/L</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>268.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>488.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special9.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>太平 梳打饼干 香葱味 400g苏打饼干咸味饼干零食(新老包装随机发货)</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>8.90</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>11.40</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special10.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>富贵鸟品牌【买风衣 送手表 只要88元】毛呢中长款风衣外套男 D67深灰 L(120-135斤)</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>88.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>228.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special11.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>华为nova5pro 手机（白条6期免息0首付+4色现货当天发+30天价保） 亮黑色 8GB+128GB全网通</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>2669.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>3999.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special12.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>宏碁（Acer）商祺SQX4270 540N 商用办公台式电脑整机（九代i3-9100 8G 1T wifi Win10 三年上门）21.5英寸</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>2666.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>3099.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special13.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>卡罗德（CAROD） 全新立式钢琴 T1  原装88键 自动演奏 品牌钢琴 T1 经典版</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>15199.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>18500.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special14.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>鳄鱼恤 CROCODILE 商务休闲正装鞋子男经典舒适套脚单鞋男士皮鞋男 EYX1066 黑色 42</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>138.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>328.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special15.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>云南白药三七粉 豹七 超细粉 260g/瓶 配小勺 云南文山三七头打粉</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>178.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>248.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special16.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>OJJ Z1指纹锁智能锁家用防盗门锁智能门锁电子锁密码锁指纹锁</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1498.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>1999.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special17.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>雷神(ThundeRobot)五代新911荣耀版16.6英寸非15.6游戏笔记本电脑九代i7-9750H 16G 512GSSD 144Hz GTX1660Ti</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>8259.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>8999.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special18.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>【星空套装】全新Kindle 电子书阅读器 青春版 4G白色*青春版保护套-星空</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>666.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>726.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special19.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>企鹅欧洲史1-3（套装共3册）</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>139.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>194.50</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special20.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>欧洲原装进口 诺优能荷兰版 (Nutrilon)  荷兰牛栏 儿童配方奶粉 5段(24-36月) 800g 安心罐</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>109.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>150.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special1.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>AOC 27英寸 Carry全场 曲面2K高清 144Hz高刷新率1Ms 超广色域 升降支架游戏电竞显示器 CQ27G1</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1769.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>2088.90</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special2.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>南极人（NANJIREN）冲锋衣裤男女三合一两件套秋冬季可拆卸加厚抓绒防风防水保暖外套登山服 推荐：男牛仔蓝 XL</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>199.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>359.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special3.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>好时之吻 Kisses 炫彩 多口味巧克力 糖果零食 婚庆喜糖 散装 500g</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>50.80</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>57.40</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/special4.webp" alt="">-->
+                        <!--<p></p>-->
+                        <!--<h6>松下（Panasonic） MC-8D58D充电式无绳手持除螨无线长续航100W吸入功率大吸力家用吸尘器（银色）</h6>-->
+                        <!--<div class="money">-->
+                            <!--<span class="one"><i>￥</i><strong>1348.00</strong></span>-->
+                            <!--<span class="two"><i>￥</i><s>2199.00</s></span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<button class="jiantou-l" id="left3"><i></i></button>-->
+        <!--<button class="jiantou-r" id="right3"><i></i></button>-->
+    <!--</div>-->
+    <!--<div class="Time-limit-r">-->
+        <!--<div>-->
+            <!--<a href="#">-->
+                <!--<img src="images/special21.webp" alt="">-->
+                <!--<div class="Time-limit-r-b">-->
+                    <!--<p class="Time-limit-r-b-title">金秋钟表精选</p>-->
+                    <!--<p class="Time-limit-r-b-promo">全场低至9.9元</p>-->
+                    <!--<div class="action">-->
+                        <!--品牌秒杀-->
+                        <!--<i class="sanjiao xuanzhuan"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<a href="">-->
+                <!--<img src="images/special21.webp" alt="">-->
+                <!--<div class="Time-limit-r-b">-->
+                    <!--<p class="Time-limit-r-b-title">金秋钟表精选</p>-->
+                    <!--<p class="Time-limit-r-b-promo">全场低至9.9元</p>-->
+                    <!--<div class="action">-->
+                        <!--品牌秒杀-->
+                        <!--<i class="sanjiao xuanzhuan"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/gundong.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="../../../H5前端课程/JS/JS第一阶段/JS高级/day_12/案例/public.js"></script>
+</head>
+<body>
+    <div class="feature">
+    <div class="feature-t">
+        <a class="feature-t-logo" href="###">
+            <div class="logo-container">
+                <div class="logo-text">
+                    探索新生活
+                    <i class="sprite1"></i>
+                </div>
+            </div>
+        </a>
+        <div class="feature-nice-product" id="auto">
+            <ul>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>人头马 苏格兰威士忌</span>
+                        <img class="bianse" src="images/rentouma.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/deguomedi.webp" alt="">
+                        <span>德国medi支撑护腰带</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>双立人 不锈钢 料理刀</span>
+                        <img class="bianse" src="images/liaolidao.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/huashuowuxian.webp" alt="">
+                        <span>华硕无线吃鸡网卡</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>拉夫劳伦 刺绣 运动帽</span>
+                        <img class="bianse" src="images/lafulaolun.webp" alt="">
+                    </a>
+                </li>
+
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/CK.webp" alt="">
+                        <span>CK 大容量 旅行包</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>黑街多功能变形轮滑鞋</span>
+                        <img class="bianse" src="images/heijie.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/Upan.webp" alt="">
+                        <span>金士顿512G U盘</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>宾得 高倍清 望远镜 </span>
+                        <img class="bianse" src="images/wangyuanjing.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/huaban.webp" alt="">
+                        <span>迪士尼儿童滑板车</span>
+                    </a>
+                </li>
+
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>双立人 不锈钢 料理刀</span>
+                        <img class="bianse" src="images/liaolidao.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/huashuowuxian.webp" alt="">
+                        <span>华硕无线吃鸡网卡</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>拉夫劳伦 刺绣 运动帽</span>
+                        <img class="bianse" src="images/lafulaolun.webp" alt="">
+                    </a>
+                </li>
+                <li class="feature-nice-product-two">
+                    <a href="###">
+                        <img class="bianse" src="images/huashuowuxian.webp" alt="">
+                        <span>华硕无线吃鸡网卡</span>
+                    </a>
+                </li>
+                <li class="feature-nice-product-one">
+                    <a href="###">
+                        <span>拉夫劳伦 刺绣 运动帽</span>
+                        <img class="bianse" src="images/lafulaolun.webp" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var current = 0;//只声明了一次
+            function f1() {
+                var ulObj = my$("auto").children[0];
+                current -= 1;
+                if (current < -800) {
+                    ulObj.style.left = 0 + "px";
+                    current = 0;
+                } else {
+                    ulObj.style.left = current + "px";
+                }
+            }
+            var timeId=setInterval(f1, 20);
+            my$("auto").onmouseover=function () {
+                //停止
+                clearInterval(timeId);
+            };
+            my$("auto").onmouseout=function () {
+                //继续
+                timeId=setInterval(f1, 20);
+            };
+
+        </script>
+    </div>
+    <div class="feature-b">
+        <div class="Receiving-coupon">
+            <div class="Receiving-coupon-t">
+                <a href="###">
+                    <h3>领卷中心</h3>
+                    <i class="sprite1"></i>
+                </a>
+            </div>
+            <div class="Receiving-coupon-b">
+                <div class="Receiving-coupon-b-item1">
+                    <a href="###">
+                        <div class="item1-l">
+                            <img src="images/item1-pic1.webp" alt="">
+                        </div>
+                        <div class="item1-info">
+                            <i>￥</i><span>50</span>
+                            <p class="text1">满999元可用</p>
+                            <p class="text2">仅可购买部分冰洗自营商品</p>
+                        </div>
+                        <div class="item1-more">
+                            <p>更多好卷</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Receiving-coupon-b-item2">
+                    <a href="###">
+                        <div class="item2-l">
+                            <img src="images/item2-pic2.webp" alt="">
+                        </div>
+                        <div class="item2-info">
+                            <i>￥</i><span>100</span>
+                            <p class="text1">满980元可用</p>
+                            <p class="text2">仅可购买家电活动商品</p>
+                        </div>
+                        <div class="item2-more">
+                            <p>更多好卷</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Receiving-coupon-b-item3">
+                    <a href="###">
+                        <div class="item3-l">
+                            <img src="images/item3-pic3.webp" alt="">
+                        </div>
+                        <div class="item3-info">
+                            <i>￥</i><span>100</span>
+                            <p class="text1">满1000元可用</p>
+                            <p class="text2">仅可购买自营手机部分商品</p>
+                        </div>
+                        <div class="item3-more">
+                            <p>更多好卷</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="Good-shop">
+            <div class="Good-shop-t">
+                <a href="###">
+                    <h3>逛好店</h3>
+                    <i class="sprite1"></i>
+                </a>
+            </div>
+            <div class="Good-shop-b">
+                <div class="Good-shop-b-item1">
+                    <a href="###">
+                        <div class="Good-shop-b-item1-l">
+                            <div class="item1-l-title">百草味京东自营旗舰店</div>
+                            <div class="item-tags">
+                                <span class="item-tags-autotrophy">自营</span>
+                                <span class="item-tags-tide">吃货最爱</span>
+                            </div>
+                            <div class="item1-focus">
+                                364.5万人关注
+                            </div>
+                        </div>
+                        <div class="Good-shop-b-item1-r">
+                            <img src="images/Good-shop1.webp" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="Good-shop-b-item2">
+                    <a href="###">
+                        <div class="Good-shop-b-item2-l">
+                            <div class="item2-l-title">耐克（NIKE）京东自营专区</div>
+                            <div class="item-tags">
+                                <span class="item-tags-autotrophy">自营</span>
+                                <span class="item-tags-tide">随心而动</span>
+                            </div>
+                            <div class="item2-focus">
+                                263.4万人关注
+                            </div>
+                        </div>
+                        <div class="Good-shop-b-item2-r">
+                            <img src="images/Good-shop2.webp" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="find">
+            <div class="find-t">
+                <a href="###">
+                    <h3>发现</h3>
+                    <i class="sprite1"></i>
+                </a>
+            </div>
+            <div class="find-b">
+                <button class="jiantou-l">
+                    <i></i>
+                </button>
+                <a href="###">
+                    <div class="find-b-pic1">
+                        <img src="images/find1--1.webp" alt="">
+                        <p>闻名已久了，这次开个荤，买个尝试一下</p>
+                    </div>
+                    <div class="find-b-pp">
+                        <img src="images/pp.webp" alt="">
+                        <span>WMF官方旗舰店</span>
+                        <span class="last">京东好店</span>
+                    </div>
+                </a>
+                <button class="jiantou-r">
+                    <i></i>
+                </button>
+            </div>
+        </div>
+        <div class="new-product">
+            <div class="new-product-t">
+                <a href="###">
+                    <h3>新品首发</h3>
+                    <i class="sprite1"></i>
+                </a>
+            </div>
+            <div class="new-product-b">
+                <a class="new-product-b-item1" href="###">
+                    <div class="human-qi">
+                        <div class="human-qi-l">
+                            <span class="text1">人气新品</span>
+                            <p>豆瓣电影日历2020朱砂红套装版</p>
+                            <span class="text2"></span>
+                        </div>
+                        <div class="human-qi-r">
+                            <img src="images/new1.webp" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="new-product-b-item2" href="###">
+                    <img src="images/new2.webp" alt="">
+                </a>
+                <a class="new-product-b-item3" href="###">
+                    <img src="images/new3.webp" alt="">
+                </a>
+                <a class="new-product-b-item4" href="###">
+                    <img src="images/new4.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
